@@ -1,0 +1,6 @@
+# A very simple playbook with ansible where only hostnames of all machines present in /etc/ansible/host files present will be displayed
+---
+  - hosts: all
+    tasks:
+    - name: Hostname of all Machines in Network
+      command: date
